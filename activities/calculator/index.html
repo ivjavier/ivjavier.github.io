@@ -1,14 +1,28 @@
+
+
 <html>
-  <head>
-  
+
+	<head>
 	<!-- Bootstrap Core CSS -->
-	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom CSS -->
-	<link href="../css/toggle-sidebar.css" rel="stylesheet">
-  
-  </head>
-  <body>
-      <script>
+	<link href="../../css/toggle-sidebar.css" rel="stylesheet">
+	
+	<style>
+	button, input{
+		width:100%;
+	}
+	</style>
+	
+	
+	</head>
+
+	
+
+ <body>
+    
+
+		<script>
           function toNum(n){
               return parseInt(n);
           }
@@ -16,46 +30,100 @@
               sum=toNum(n1) + toNum(n2);
             output(sum);
           }
-		  function sub(n1, n2){
-              difference=toNum(n1) - toNum(n2);
-            output(difference);
+          function output(res){
+              alert(res);
           }
-		  function mul(n1, n2){
-              product=toNum(n1) * toNum(n2);
-            output(product);
+     
+	  
+	  
+          function toNum(n){
+              return parseInt(n);
           }
-		  function div(n1, n2){
-              quotient=toNum(n1) / toNum(n2);
-            output(quotient);
+          function mult(n1, n2){
+              prod=toNum(n1) * toNum(n2);
+            output(prod);
+          }
+          function output(res){
+              alert(res);
+          }
+      
+	   
+          function toNum(n){
+              return parseInt(n);
+          }
+          function sub(n1, n2){
+              diff=toNum(n1) - toNum(n2);
+            output(diff);
+          }
+          function output(res){
+              alert(res);
+          }
+      
+	  
+	  
+          function toNum(n){
+              return parseInt(n);
+          }
+          function div(n1, n2){
+              quot=toNum(n1) / toNum(n2);
+            output(quot);
           }
           function output(res){
               alert(res);
           }
       </script>
-      <form name="calc">
-          Num1: <input type="text" id="num1"><br>
-          Num2: <input type="text" id="num2"><br>
-    </form>
-	
-	<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Addition</button>
-				<button onclick="sub(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>
-        </div>
-        <div class="col-md-6">
-			<button onclick="mul(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
-			<button onclick="div(document.querySelector('#num1').value, document.querySelector('#num2').value)">Division</button>
-        </div>
-    </div>
-</div>
+	  
     
-
-<button type="button" class="btn btn-primary-outline">Primary</button>
-
+   <div class="container">
+        <div class="col-md-12">
+          <form name="calc">
+            <div class="row">
+              <div class="col-md-3">
+                Num1:
+              </div>
+              <div class="col-md-9">
+                <input type="text" id="num1">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                Num2:
+              </div>
+              <div class="col-md-9">
+                <input type="text" id="num2">
+              </div>
+            </div>
+          </form>
+	
+	
+	<div class="row">
+              <div class="col-md-6">
+                <button class="btn primary" onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
+              </div>
+              <div class="col-md-6">
+                <button class="btn primary" onclick="sub(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtraction</button>
+              </div>
+          </div>
+		<br>
+		<div class="row">
+				<div class="col-md-6">
+                <button class="btn primary" onclick="mult(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiplication</button>
+              </div>
+              <div class="col-md-6">
+                <button class="btn primary" onclick="div(document.querySelector('#num1').value, document.querySelector('#num2').value)">Division</button>
+              </div>
+          </div>
+	
+	
+    
 	<!-- jQuery -->
-	<script src="../js/jquery.js"></script>
+	<script src="../../js/jquery.js">
+	</script>
 	<!-- Bootstrap Core JavaScript -->
-	<script src="../js/bootstrap.min.js"></script>
- </body>
-</html>
+	<script src="../../js/bootstrap.min.js">
+	</script>
+
+  </body>
+
+  
+  </html>
